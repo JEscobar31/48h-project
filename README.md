@@ -22,7 +22,7 @@ Open the project with Live Server
 
 ## Outils
 
-* [Bootsrapp](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Bootsrapp](https://getbootstrap.com/) - The web framework used
 
 ### Les langages  
 
