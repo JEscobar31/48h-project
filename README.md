@@ -17,8 +17,15 @@ Pour lancer le projet, il suffit de faire clic droit sur le ficher "index.html" 
 ```
 Open the project with Live Server
 ```
+## Screenshots
+Home d'accueil
+![Screenshot](/assets/img/home.png)
 
+Jeux adulte avec pops up réponse
+![Screenshot](/assets/img/adulte.png)
 
+Jeux enfant
+![Screenshot](/assets/img/enfant.png)
 
 ## Outils
 
