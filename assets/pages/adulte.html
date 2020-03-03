@@ -20,7 +20,7 @@
 
         <header>
             <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-              <a class="navbar-brand" href="index.html"><img src="/assets/img/logo2.png" alt="logo" class="logo"></a>
+              <a class="navbar-brand" href="/index.html"><img src="/assets/img/logo2.png" alt="logo" class="logo"></a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -30,10 +30,7 @@
                     <a class="nav-link" href="/assets/pages/adulte.html"><i class="fa fa-user" aria-hidden="true">Adulte</i></a>
                   </li>
                   <li class="nav-item active">
-                    <a class="nav-link" href="/assets/pages/child.html"><i class="fa fa-child" aria-hidden="true">Enfant</i></a>
-                  </li>
-                  <li class="nav-item active">
-                    <a class="nav-link" id="date" href="#"><i class="fa fa-clock-o" aria-hidden="true">Date:</i></a>
+                    <a class="nav-link" href="/index.html">Exit</a>
                   </li>
                 </ul>
               </div>
@@ -44,7 +41,7 @@
         <div class="conteneur" id="question-container">
             <h2 class="question">J'habite à 4km de mon travail, dois-je prendre le vélo ou la voiture ?</h2>
             <div class="reponse">
-                <div class="choix left">Vélo</div>
+                <div class="choix left" id="updateDetails1">Vélo</div>
                 <div class="choix right" id="updateDetails" onclick="move()">Voiture</div>
             </div>
 
@@ -102,8 +99,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <script>
+      document.getElementById('updateDetails1').addEventListener('click', function(){
+        toastr.info('Bonne réponse ✅: Il est préféreable de prendre le vélo pour des trajets de courtes distances')
+      })
       document.getElementById('updateDetails').addEventListener('click', function(){
-        toastr.info('Il est préféreable de prendre le vélo pour des trajets de courtes distances')
+        toastr.info('Mauvaise réponse ❌: Il est préféreable de prendre le vélo pour des trajets de courtes distances. Les voitures polluent énormement et ont des effets néfastes sur la couche d ozone.')
       })
     </script>
     </body>
