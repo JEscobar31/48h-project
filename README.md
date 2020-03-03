@@ -12,7 +12,7 @@ Live Server
 
 ## Running the tests
 
-Pour lancer le projet, il suffit de faire clic droit sur le ficher "index.html" dans l'IDE et cliquer sur "Open with live Server"
+Ouvrir le projet dans l'IDE, ensuite il suffit de faire clic droit n'importe ou dans le code du ficher "index.html" et cliquer sur "Open with live Server"
 
 ```
 Open the project with Live Server
