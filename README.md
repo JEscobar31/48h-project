@@ -1,4 +1,4 @@
-# Les Neufs Jardiniers - Projet 48h
+# Les Neufs Jardiniers - Projet 48h - Campus Ynov Toulouse 🚀
 
 ![Screenshot](/assets/img/logo-readme.png)
 
