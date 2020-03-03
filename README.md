@@ -1,6 +1,6 @@
 # Les Neufs Jardiniers - Projet 48h
 
-![Screenshot](/assets/img/logo.png)
+![Screenshot](/assets/img/logo-readme.png)
 
 ## Getting Started
 
