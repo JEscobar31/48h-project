@@ -1,6 +1,6 @@
-# 48h-project
+# Les Neufs Jardiniers - Projet 48h
 
-One Paragraph of project description goes here
+![Screenshot](/assets/img/logo.png)
 
 ## Getting Started
 
