@@ -1,0 +1,186 @@
+body{
+    background-image: url(/assets/img/bg.dms);
+}
+ .earth {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 20px #000 inset, 0 0 20px 2px #000;
+  }
+  
+  .earth:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: -20px -20px 50px 2px #000 inset; 
+    border-radius: 50%;
+  }
+  
+  .earth > div {
+    width: 200%;
+    height: 100%;
+    animation: spin 30s linear alternate infinite;
+    background: url(https://marketplace.unl.edu/media/catalog/product/cache/14/image/1800x/040ec09b1e35df139433887a97daa66f/r/m/rmc-10.3.jpg);  
+    /* background: url(https://web.opendrive.com/api/v1/download/file.json/NTlfMTQ1MTkzNDhf?inline=1);   */
+    /*orginal image at https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Earthmap1000x500compac.jpg/640px-Earthmap1000x500compac.jpg */
+    background-size: cover;
+  }
+  @keyframes spin {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+
+  /*STYLE QUESTIONNAIRE*/
+  .conteneur{
+    width: 99%;
+    height: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    color: white;
+}
+.reponse{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.choix{
+    padding: 20px;
+    border: 2px solid black;
+    flex: 1;
+    margin-right: 15%;
+    margin-left: 15%;
+    border: 3px solid white;
+    cursor: pointer;
+    border-radius: 20px;
+    max-width: 100px;
+    margin-top: 18%;
+    color: white;
+}
+
+.left:hover,
+.right:hover{
+  background-color: white;
+  color: black;
+}
+
+h2{
+    padding-top: 5%;
+}
+
+.question{
+  padding-top: 5%;
+}
+
+.progress{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:10px; 
+    height: 30px !important; 
+    background-color: transparent !important;
+    border: solid 2px white;
+}
+
+
+.container-bar{
+    padding-top: 130px
+}
+
+#bar-container-1,
+#bar-container-2,
+#bar-container-3,
+#bar-container-4{
+  background: none;
+  border: solid 2px white;
+  transition : width 5s ease;
+
+}
+
+.navbar{
+    height: 50px;
+}
+
+.main-title{
+  color: white;
+  text-align: center; 
+}
+
+.logo{
+  height:50px;
+  width:40px;
+}
+
+.navbar{
+  height:65px;
+  opacity: 0.7;
+}
+
+.nav-item{
+  font-size: 23px;
+}
+
+.home-logo{
+  height: 20%;
+  width: 17%;
+  padding-top: 10%;
+}
+
+.div-info, .button-home{
+  /* margin-left: auto;
+  margin-right: auto; */
+  text-align: center;
+}
+
+.btn{
+  padding: 20px;
+}
+
+#toast-container{
+  padding-top: 10%;
+}
+
+
+
+
+/*-----------ANIMATION MAIN TITLE---------*/
+.main-title{
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 5em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 8s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+   
+  

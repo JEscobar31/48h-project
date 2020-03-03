@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adulte</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/date.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+
+
+    <link href="toastr.css" rel="stylesheet"/>
+
+
+
+</head>
+    <body>
+
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+              <a class="navbar-brand" href="index.html"><img src="/assets/img/logo2.png" alt="logo" class="logo"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="/assets/pages/adulte.html"><i class="fa fa-user" aria-hidden="true">Adulte</i></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="/assets/pages/child.html"><i class="fa fa-child" aria-hidden="true">Enfant</i></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" id="date" href="#"><i class="fa fa-clock-o" aria-hidden="true">Date:</i></a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+
+
+        <div class="conteneur" id="question-container">
+            <h2 class="question">J'habite à 4km de mon travail, dois-je prendre le vélo ou la voiture ?</h2>
+            <div class="reponse">
+                <div class="choix left">Vélo</div>
+                <div class="choix right" id="updateDetails" onclick="move()">Voiture</div>
+            </div>
+
+
+            <div class="container-bar">
+                <div class="progress" id="bar">
+                    <div class="progress-bar bg-danger progress-bar progress-bar-danger" id="bar-container-1" role="progressbar" aria-valuenow="70"
+                    aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                      80% Health
+                    </div>
+                </div>
+
+
+
+                <div class="progress" >
+                    <div class="progress-bar bg-warning progress-bar progress-bar-danger"  id="bar-container-2" role="progressbar" aria-valuenow="70"
+                    aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                      50% Pollution
+                    </div>
+                </div>
+
+
+                <div class="progress">
+                    <div class="progress-bar bg-primary progress-bar progress-bar-danger"  id="bar-container-3" role="progressbar" aria-valuenow="70"
+                    aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                      30% Contentement
+                    </div>
+                </div>
+
+
+                <div class="progress">
+                    <div class="progress-bar bg-success progress-bar progress-bar-danger"  id="bar-container-4" role="progressbar" aria-valuenow="70"
+                    aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                      80% Ecologie
+                    </div>
+                </div>
+            </div>
+          
+    
+
+        <!------------------EARTH-------------------->
+        </div>
+        <div class="earth">
+            <div></div>
+        </div>
+
+
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="/assets/js/toast.js"></script>
+    <script src="/assets/js/progress.js"></script>
+    <script src="/assets/js/date.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script>
+      document.getElementById('updateDetails').addEventListener('click', function(){
+        toastr.info('Il est préféreable de prendre le vélo pour des trajets de courtes distances')
+      })
+    </script>
+    </body>
+    
+</html>
